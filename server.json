@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.audifact/audifact",
+  "name": "io.audifact/audifact",
   "title": "Audifact",
   "description": "Signed, append-only receipts of an AI agent's decisions and outcomes, with public proof links.",
   "repository": {
