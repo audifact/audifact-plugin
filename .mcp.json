@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "audifact": {
+      "type": "http",
+      "url": "https://api.audifact.io/mcp",
+      "headers": {
+        "X-API-Key": "${AUDIFACT_API_KEY}"
+      },
+      "note": "Audifact hosted MCP server (streamable HTTP). Auth: X-API-Key from the plugin's AUDIFACT_API_KEY variable (set at install, never in chat). Tools: log_decision, log_outcome, get_proof, register_agent, list_my_recent_decisions. Writes are append-only."
+    }
+  }
+}

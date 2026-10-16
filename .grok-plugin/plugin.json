@@ -1,0 +1,22 @@
+{
+  "name": "audifact",
+  "version": "0.1.0",
+  "description": "Your bot keeps a signed receipt of its decisions. Logs consequential decisions, external actions and subagent delegations to Audifact's append-only, hash-chained ledger via the hosted MCP server at api.audifact.io/mcp. Requires an Audifact API key; events bill to that key's account.",
+  "author": { "name": "Audifact", "url": "https://audifact.io" },
+  "homepage": "https://audifact.io",
+  "repository": "https://github.com/audifact/grokbot-plugin",
+  "license": "MIT",
+  "keywords": ["audifact", "audit", "receipts", "ledger", "agent decisions", "provenance"],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "AUDIFACT_API_KEY": {
+        "type": "string",
+        "title": "Audifact API key",
+        "description": "Your af_... key from audifact.io Dashboard -> API Keys. Sent only as the X-API-Key header to https://api.audifact.io/mcp. Events consume credits on this key's account."
+      }
+    },
+    "required": ["AUDIFACT_API_KEY"]
+  }
+}
