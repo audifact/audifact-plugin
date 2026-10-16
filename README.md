@@ -61,7 +61,7 @@ Every event consumes credits on **the Audifact account that owns the API key**.
 
 ## Tools
 
-`log_decision`, `log_outcome`, `get_proof`, `register_agent`, `list_my_recent_decisions`.
+`log_decision`, `log_outcome`, `get_proof`, `register_agent`, `list_agent_decisions` (deprecated alias: `list_my_recent_decisions`).
 
 ## Repo layout
 
