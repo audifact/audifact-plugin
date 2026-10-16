@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.audifact/audifact",
+  "title": "Audifact",
+  "description": "Signed, append-only receipts of an AI agent's decisions and outcomes, with public proof links.",
+  "repository": {
+    "url": "https://github.com/audifact/grokbot-plugin",
+    "source": "github"
+  },
+  "websiteUrl": "https://audifact.io",
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.audifact.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Audifact API key (af_...) from audifact.io Dashboard -> API Keys. Events bill to this key's account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

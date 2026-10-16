@@ -1,0 +1,34 @@
+{
+  "name": "audifact",
+  "displayName": "Audifact",
+  "version": "0.1.0",
+  "description": "Your agent keeps a signed receipt of its decisions. Logs consequential decisions, external actions and delegations to Audifact's append-only ledger via https://api.audifact.io/mcp.",
+  "author": { "name": "Audifact", "email": "creo@audifact.io", "url": "https://audifact.io" },
+  "homepage": "https://audifact.io",
+  "repository": "https://github.com/audifact/grokbot-plugin",
+  "license": "MIT",
+  "keywords": ["audit", "receipts", "ledger", "provenance", "compliance"],
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://audifact.io",
+  "supportUrl": "https://audifact.io",
+  "privacyPolicyUrl": "https://audifact.io/privacy",
+  "termsOfServiceUrl": "https://audifact.io/terms",
+  "userConfig": {
+    "audifact_api_key": {
+      "type": "string",
+      "title": "Audifact API key",
+      "description": "Your af_... key from audifact.io Dashboard -> API Keys. Sent only as X-API-Key to api.audifact.io. Events consume credits on this key's account.",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "audifact": {
+      "type": "http",
+      "url": "https://api.audifact.io/mcp",
+      "headers": {
+        "X-API-Key": "${user_config.audifact_api_key}"
+      }
+    }
+  }
+}

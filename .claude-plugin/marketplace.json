@@ -1,0 +1,12 @@
+{
+  "name": "audifact",
+  "description": "Audifact plugins: signed decision receipts for AI agents",
+  "owner": { "name": "Audifact", "email": "creo@audifact.io" },
+  "plugins": [
+    {
+      "name": "audifact",
+      "source": "./",
+      "description": "Signed, append-only receipts of your agent's decisions with proof links."
+    }
+  ]
+}
