@@ -18,7 +18,7 @@ It is **receipts, not silent full tracing**. Target about **3–10 events per ac
 
 **Official MCP Registry / VS Code / Copilot / other registry clients**
 
-After we publish `io.github.audifact/audifact`, add the remote server from the [MCP Registry](https://registry.modelcontextprotocol.io) (or your client’s MCP gallery). Provide `X-API-Key` when prompted. Metadata: [`server.json`](./server.json).
+Listed as **`io.audifact/audifact`** in the [MCP Registry](https://registry.modelcontextprotocol.io) (search “audifact”). Add the remote server from the registry or your client’s MCP gallery. Provide `X-API-Key` when prompted. Metadata: [`server.json`](./server.json).
 
 **Claude Code** (self-hosted marketplace — no review queue)
 
