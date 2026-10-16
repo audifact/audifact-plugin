@@ -4,7 +4,7 @@
   "title": "Audifact",
   "description": "Signed, append-only receipts of an AI agent's decisions and outcomes, with public proof links.",
   "repository": {
-    "url": "https://github.com/audifact/grokbot-plugin",
+    "url": "https://github.com/audifact/audifact-plugin",
     "source": "github"
   },
   "websiteUrl": "https://audifact.io",

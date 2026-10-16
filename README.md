@@ -23,20 +23,21 @@ After we publish `io.github.audifact/audifact`, add the remote server from the [
 **Claude Code** (self-hosted marketplace — no review queue)
 
 ```text
-/plugin marketplace add audifact/grokbot-plugin
+/plugin marketplace add audifact/audifact-plugin
 /plugin install audifact@audifact
 ```
 
 Paste the key into **Audifact API key** (`userConfig`, stored in the OS keychain).
 
-**Grok Bot / Cursor** (x.ai catalog — submitted 2026-10-16, awaiting listing)
+**Grok Bot / Cursor** (x.ai catalog)
 
-Install from the catalog when listed. Paste the key into **AUDIFACT_API_KEY**.
+Install from the catalog when listed. Paste the key into **AUDIFACT_API_KEY**.  
+(Repo renamed from `grokbot-plugin` → `audifact-plugin`; resubmit replaces the 2026-10-16 draft.)
 
 **Agent Skills only** (`npx skills add`)
 
 ```bash
-npx skills add audifact/grokbot-plugin
+npx skills add audifact/audifact-plugin
 ```
 
 This installs the skill instructions. You still need the **MCP server** connected in the same client, or the skill has no tools to call.

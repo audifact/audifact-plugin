@@ -5,7 +5,7 @@
   "description": "Your agent keeps a signed receipt of its decisions. Logs consequential decisions, external actions and delegations to Audifact's append-only ledger via https://api.audifact.io/mcp.",
   "author": { "name": "Audifact", "email": "creo@audifact.io", "url": "https://audifact.io" },
   "homepage": "https://audifact.io",
-  "repository": "https://github.com/audifact/grokbot-plugin",
+  "repository": "https://github.com/audifact/audifact-plugin",
   "license": "MIT",
   "keywords": ["audit", "receipts", "ledger", "provenance", "compliance"],
   "icon": "./assets/logo.svg",

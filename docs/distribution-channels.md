@@ -1,5 +1,5 @@
 # Audifact distribution channels (researched 2026-10-16)
-Assets: public repo audifact/grokbot-plugin; hosted MCP https://api.audifact.io/mcp (streamable HTTP, X-API-Key); SKILL.md (Agent Skills format). Already submitted: x.ai Grok Bot + Cursor (10/16).
+Assets: public repo audifact/audifact-plugin; hosted MCP https://api.audifact.io/mcp (streamable HTTP, X-API-Key); SKILL.md (Agent Skills format). Already submitted: x.ai Grok Bot + Cursor (10/16).
 Confidence: "V" = verified against live docs today; "K" = from prior knowledge, re-check page before submitting.
 
 ## Do first
@@ -8,10 +8,10 @@ Confidence: "V" = verified against live docs today; "K" = from prior knowledge, 
    - `brew install mcp-publisher` (or release binary from github.com/modelcontextprotocol/registry).
    - `mcp-publisher login github` as an audifact org member (org membership must be public) -> namespace `io.github.audifact/*`. Alt: `io.audifact/*` via DNS TXT (`mcp-publisher login dns`) — nicer brand, needs DNS record.
    - `mcp-publisher publish`; check `https://registry.modelcontextprotocol.io/v0/servers?search=audifact`.
-2. **Claude Code: make the repo its own marketplace** (V) — free, no review. Add drafts/claude-plugin/* . Users: `/plugin marketplace add audifact/grokbot-plugin` then `/plugin install audifact@audifact`. Claude uses `userConfig` with `sensitive: true` (keychain) and `${user_config.audifact_api_key}` in .mcp.json headers. Run `claude plugin validate . --strict`.
+2. **Claude Code: make the repo its own marketplace** (V) — free, no review. Add drafts/claude-plugin/* . Users: `/plugin marketplace add audifact/audifact-plugin` then `/plugin install audifact@audifact`. Claude uses `userConfig` with `sensitive: true` (keychain) and `${user_config.audifact_api_key}` in .mcp.json headers. Run `claude plugin validate . --strict`.
    - Caveat: root .mcp.json is shared with Grok's `${AUDIFACT_API_KEY}`; keep Claude's MCP config in a separate file referenced from .claude-plugin/plugin.json.
 3. **Anthropic directory (claude.ai/directory)** (V) — one listing reaches claude.ai, Cowork and Claude Code. Submit at https://claude.ai/directory/manage (needs paid claude.ai plan); checklist https://claude.com/docs/plugins/pre-submission-checklist. Do after #2 validates. Remote connectors there generally expect OAuth — an API-key-only plugin may be fine, connector listing may not. Review time unknown.
-4. **Agent Skills / skills.sh** (K) — skills.sh indexes repos installed via `npx skills add audifact/grokbot-plugin`; no submission form, appears from installs. Also works for Codex, Cursor, Copilot, Gemini CLI etc. that read SKILL.md. Effort S: just make sure SKILL.md frontmatter (name, description) is valid; add install line to README.
+4. **Agent Skills / skills.sh** (K) — skills.sh indexes repos installed via `npx skills add audifact/audifact-plugin`; no submission form, appears from installs. Also works for Codex, Cursor, Copilot, Gemini CLI etc. that read SKILL.md. Effort S: just make sure SKILL.md frontmatter (name, description) is valid; add install line to README.
 5. **Smithery** (K) — smithery.ai/new: sign in with GitHub, "external/remote" server by URL; supports config schema for API key. Effort S. Big MCP audience.
 6. **Glama + mcp.so + PulseMCP + MCP Market + mcpservers.org** (K) — directory submit forms (Glama also auto-indexes GitHub repos with MCP, and awesome-mcp-servers PR requires a Glama listing/score badge). ~10 min each. Effort S.
 7. **punkpeye/awesome-mcp-servers PR** (K) — entry draft in drafts/awesome-mcp-entry.md; needs Glama listing first. Also appropriate: awesome Claude Code plugin lists, VoltAgent/awesome-agent-skills.
