@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0f172a"/><text x="32" y="42" font-family="sans-serif" font-size="30" font-weight="700" fill="#22d3ee" text-anchor="middle">Af</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Audifact">
+  <!-- Brand favicon: ink field + white A / cyan F monogram -->
+  <rect width="32" height="32" fill="#0f172a"/>
+  <!-- A (white) - geometric sans, tight for 16-32px -->
+  <path fill="#ffffff" d="M3.2 24.2 8.55 7.8h3.1l5.35 16.4h-3.15l-1.05-3.35H7.4l-1.05 3.35H3.2zm5.55-5.85h3.7L10.6 11.5l-1.85 6.85z"/>
+  <!-- F (accent cyan) -->
+  <path fill="#22d3ee" d="M17.6 7.8h10.1v2.85h-7v3.55h6.35v2.8H20.7v7.2h-3.1V7.8z"/>
+</svg>
