@@ -6,7 +6,7 @@ description: Log signed receipts of consequential decisions, external actions an
 
 You have the Audifact MCP tools. They write **signed, append-only receipts** that cannot be edited or deleted. Use them for the few things that matter, not as a diary.
 
-Tools, in order of preference: `log_decision`, `log_outcome`, `get_proof`. `list_agent_decisions` is for when the user asks what an agent logged (needs that agent's public_key). `register_agent` is only needed if a call reports your agent is unknown.
+Tools, in order of preference: `log_decision`, `log_outcome`, `get_proof`. `list_agent_decisions` / `list_agent_outcomes` are for when the user asks what an agent logged (need that agent's public_key). `register_agent` is only needed if a call reports your agent is unknown.
 
 ## Always
 - Pass your own `agent_name` on every call (e.g. `grokbot-cos`). Never log on behalf of another bot.
